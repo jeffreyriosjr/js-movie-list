@@ -13,6 +13,7 @@ files to create: movie-list.html, movie-list.js
 
 movieList = [
     {
+        id:1,
         title: 'Interstellar',
         year: '2014',
         genre: 'science fiction',
@@ -20,6 +21,7 @@ movieList = [
         imdbRating: '8.6',
     },
     {
+        id:1,
         title: 'Padmaavat',
         year: '2018',
         genre: 'drama, history, romance',
@@ -27,6 +29,7 @@ movieList = [
         imdbRating: '7',
     },
     {
+        id:1,
         title: 'Beauty and the Beast',
         year: '1991',
         genre: 'animation, family, fantasy',
@@ -34,6 +37,7 @@ movieList = [
         imdbRating: '8',
     },
     {
+        id:1,
         title: 'Casablanca',
         year: '1942',
         genre: 'drama, war, romance',
@@ -41,6 +45,7 @@ movieList = [
         imdbRating: '8.5',
     },
     {
+        id:1,
         title: 'Wall-E',
         year: '2008',
         genre: 'animation, adventure, family',
@@ -49,30 +54,15 @@ movieList = [
     },
 ];
 
-movieList.forEach((movieList) => {
-    console.log(`Your movie list includes: ${movieList.title}, ${movieList.year}, ${movieList.genre}, ${movieList.description}, ${movieList.imdbRating}`);
-});
 
 
-const findMovie = movieList.find(movieList => {
-    return movieList.title === 'Interstellar';
-});
-
-console.log(findMovie);
-
-const movieDetails = () => {
-    movies.forEach(m => {
-        console.log(`My movie title is ${m.title}and it came out in ${m.year}`)
-    });
-};
-movieDetails();
-
+//Find #2a
 const titleDetails = movieTitle =>{
     let foundMovie = movies.find(movie => {
-        return movie.title === movieTitle;
+        alert movie.title === movieTitle;
     });
-    if (foundMovie) console.log(foundMovie);
-    else console.log(`Could not find the ${movieTitle}`);
+    if (foundMovie) alert(foundMovie);
+    else alert(`Could not find the ${movieTitle}`);
 };
 
-titleDetails(Interstellar);
+//titleDetails(Interstellar);
