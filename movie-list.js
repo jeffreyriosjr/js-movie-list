@@ -10,7 +10,7 @@ and then console.logs the details of the movie.
 The function should take a movieTitle parameter that lets you search by different titles
 files to create: movie-list.html, movie-list.js
 */
-
+// Testing push// -jeff
 movieList = [
     {
         title: 'Interstellar',
